@@ -1,5 +1,6 @@
 package com.example.g7190305.simpletodolist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -21,6 +22,9 @@ public class ToDoActivity extends ActionBarActivity {
     ArrayList<String> items;
     ArrayAdapter<String> itemsAdapter;
     ListView lvItems;
+    public final static String ITEM_MESSAGE = "com.g7190305.simpletodolist.MESSAGE";
+    public final static String ITEM_POS = "com.g7190305.simpletodolist.POSITION";
+    private final int REQUEST_EDITITEM_CODE = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +35,8 @@ public class ToDoActivity extends ActionBarActivity {
         readItems();
         itemsAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
-        items.add("First Item");
-        items.add("Second Item");
+        // items.add("First Item");
+        // items.add("Second Item");
         setupListViewListener();
     }
 
@@ -76,11 +80,23 @@ public class ToDoActivity extends ActionBarActivity {
                 return true;
             }
         });
+
+        lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ToDoActivity.this, EditItemActivity.class);
+                String itemText = items.get(position);
+                intent.putExtra(ITEM_MESSAGE, itemText);
+                intent.putExtra(ITEM_POS, position);
+                // startActivity(intent);
+                startActivityForResult(intent, REQUEST_EDITITEM_CODE);
+            }
+        });
     }
 
     private void readItems() {
         File filesDir = getFilesDir();
-        File todoFile = new File( filesDir, "todi.txt");
+        File todoFile = new File( filesDir, "todo.txt");
         try {
             items = new ArrayList<String>(FileUtils.readLines(todoFile));
         } catch (IOException e) {
@@ -91,12 +107,26 @@ public class ToDoActivity extends ActionBarActivity {
 
     private void saveItems() {
         File filesDir = getFilesDir();
-        File todoFile = new File( filesDir, "todi.txt");
+        File todoFile = new File( filesDir, "todo.txt");
         try {
             FileUtils.writeLines(todoFile, items);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        String itemText;
+        Integer itemPosition;
+
+        if ( resultCode == RESULT_OK && requestCode == REQUEST_EDITITEM_CODE ) {
+            itemText = data.getExtras().getString(ITEM_MESSAGE);
+            itemPosition = data.getIntExtra(ITEM_POS, 1);
+            items.set(itemPosition, itemText);
+            itemsAdapter.notifyDataSetChanged();
+            saveItems();
+        }
     }
 }
