@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/g7190305/AndroidBootCamp/Project_0/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/g7190305/AndroidBootCamp/Project_0/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-c1b811bd04dc393293bed3509c0d67f3717db5cd.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-56be6cbc8ba395de0f4280e8195511441588490d.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/Libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/pre-dexed/debug/commons-io-2.4-80879876486d41571a82b7f9c2d1095248d8ed38.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-2b15b7ca4233ce23b74df22cde69b4efcbc549cd.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/AndroidBootCamp/Project_0/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/g7190305/AndroidBootCamp/Project_0/app/build/intermediates/pre-dexed/debug/classes-dc97f05b86020ce505c0a538e282a51d8774ce0d.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/pre-dexed/debug/classes-ba392fe4c32a2aa803253e0e8b2beb45ea78a017.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/g7190305/AndroidStudioProjects/SimpleToDoList/app/build/intermediates/pre-dexed/debug/classes-7d20e3a96b9e641b97a155ccffc7f6c3b0132f6f.jar" />
+    </item>
+    <item
+        jar="/Users/g7190305/AndroidBootCamp/Project_0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/g7190305/AndroidBootCamp/Project_0/app/build/intermediates/pre-dexed/debug/classes-35dbcdc067194933071e118a3fd92224b50b4a7e.jar" />
+    </item>
+
+</items>
